@@ -14,15 +14,7 @@
     <link rel="stylesheet" href="{{asset('css/admin/dashboard/style.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{asset('css/admin/dashboard/css.css')}}">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-615XKQXEJX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-615XKQXEJX');
-    </script>
 </head>
 <body class="bg-dark">
 <header id="header" class="header fixed-top d-flex align-items-center bg-dark">
@@ -60,5 +52,28 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <script src="{{asset('js/admin/dashboard/main.js')}}"></script>
 <script src="{{asset('js/admin/dashboard/scripts.js')}}"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyAbTG-OcP3hmyPMPShKkswo9kyffY7Ii7w",
+        authDomain: "euquefiz-e54c0.firebaseapp.com",
+        projectId: "euquefiz-e54c0",
+        storageBucket: "euquefiz-e54c0.appspot.com",
+        messagingSenderId: "335945936762",
+        appId: "1:335945936762:web:3e77796432800c0448f0c3",
+        measurementId: "G-HGBWJMZ62E"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
