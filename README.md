@@ -3,6 +3,7 @@
 
 ## Projeto: E-Commerce EuQueFiz!
 # Link: https://euquefiz.fly.dev
+# Login admin: adminEuquefiz@gmail.com Senha: adminEuquefiz
 
 ## ℹ️ O que é?
 
